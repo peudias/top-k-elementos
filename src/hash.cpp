@@ -9,14 +9,36 @@ void countTokenFrequency(istream &inputFile, unordered_map<string, int> &frequen
         string token;
 
         while(iss >> token){
-            // Remove pontuação do token
-            token.erase(remove_if(token.begin(), token.end(), ::ispunct), token.end());
-
             // Converte o token para letras minúsculas
             transform(token.begin(), token.end(), token.begin(), ::tolower);
 
+            // Remove pontuação do início e do final do token
+            while(!token.empty() && ispunct(token.front())){
+                token.erase(token.begin());
+            }
+            while(!token.empty() && ispunct(token.back())){
+                token.pop_back();
+            }
+
+            // Trata espaços extras entre palavras
+            size_t start = 0;
+            while(start < token.length()){
+                while(start < token.length() && isspace(token[start])){
+                    start++;
+                }
+                size_t end = token.find(' ', start);
+                if(end == string::npos){
+                    end = token.length();
+                }
+                string word = token.substr(start, end - start);
+                if(!word.empty()){
+                    frequencyMap[word]++;
+                }
+                start = end + 1;
+            }
+
             // Incrementa a contagem do token no frequencyMap
-            frequencyMap[token]++;
+            // frequencyMap[token]++;
         }
     }
 
