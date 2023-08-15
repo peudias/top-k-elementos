@@ -1,5 +1,9 @@
 {
     "files.associations": {
-        "elementos.h": "c"
+        "elementos.h": "c",
+        "iosfwd": "cpp",
+        "ostream": "cpp",
+        "queue": "cpp",
+        "iostream": "cpp"
     }
 }
