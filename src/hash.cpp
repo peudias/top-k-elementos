@@ -17,10 +17,10 @@ unordered_set<string> readStopwords(const string &filename){
     return stopwords;
 }
 
-void processText(istream &inputFile, unordered_map<string, int> &frequencyMap, const unordered_set<string> &stopwords){
+void processText(istream &inputStream, unordered_map<string, int> &frequencyMap, const unordered_set<string> &stopwords){
     string line;
 
-    while(getline(inputFile, line)){
+    while(getline(inputStream, line)){
         istringstream iss(line);
         string token;
 
@@ -57,22 +57,4 @@ void processText(istream &inputFile, unordered_map<string, int> &frequencyMap, c
             }
         }
     }
-}
-
-void readFile(const string &filePath){
-    ifstream inputFile(filePath);
-
-    if(!inputFile.is_open()){
-        cout << VERMELHO << "Erro ao abrir o arquivo de texto: " << filePath << RESET << endl;
-        return;
-    }
-
-    unordered_map<string, int> frequencyMap;
-    unordered_set<string> stopwords = readStopwords("./dataset/stopwords.txt");
-
-    processText(inputFile, frequencyMap, stopwords);
-    int k = 10;
-    processHash(frequencyMap, k);
-
-    inputFile.close();
 }
