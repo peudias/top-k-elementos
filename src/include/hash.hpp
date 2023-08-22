@@ -1,12 +1,9 @@
 #ifndef HASH_HPP
 #define HASH_HPP
-
 #include "util.hpp"
 
-void countTokenFrequency(istream &inputFile, unordered_map<string, int> &frequencyMap);
-
-void printTokenFrequency(const unordered_map<string, int> &frequencyMap);
-
-void readFile(const string &fileName);
+unordered_set<string> readStopwords(const string &filename);
+void readFile(const string &filePath);
+void processText(istream &inputFile, unordered_map<string, int> &frequencyMap, const unordered_set<string> &stopwords);
 
 #endif

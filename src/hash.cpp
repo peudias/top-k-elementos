@@ -1,7 +1,23 @@
 #include "include/hash.hpp"
+#include "include/heap.hpp"
 
-// Função para tokenizar a entrada e contar a frequência dos tokens
-void countTokenFrequency(istream &inputFile, unordered_map<string, int> &frequencyMap){
+unordered_set<string> readStopwords(const string &filename){
+    unordered_set<string> stopwords;
+    ifstream stopwordFile(filename);
+
+    if(stopwordFile.is_open()){
+        string stopword;
+        while(getline(stopwordFile, stopword)){
+            stopwords.insert(stopword);
+        }
+        stopwordFile.close();
+    } else{
+        cerr << VERMELHO << "Erro ao abrir o arquivo de stopwords" << RESET << endl;
+    }
+    return stopwords;
+}
+
+void processText(istream &inputFile, unordered_map<string, int> &frequencyMap, const unordered_set<string> &stopwords){
     string line;
 
     while(getline(inputFile, line)){
@@ -9,19 +25,22 @@ void countTokenFrequency(istream &inputFile, unordered_map<string, int> &frequen
         string token;
 
         while(iss >> token){
-            // Converte o token para letras minúsculas
             transform(token.begin(), token.end(), token.begin(), ::tolower);
 
-            // Remove pontuação do início e do final do token
             while(!token.empty() && ispunct(token.front())){
                 token.erase(token.begin());
             }
+
             while(!token.empty() && ispunct(token.back())){
                 token.pop_back();
             }
 
-            // Trata espaços extras entre palavras
+            if(stopwords.find(token) != stopwords.end()){
+                continue;
+            }
+
             size_t start = 0;
+
             while(start < token.length()){
                 while(start < token.length() && isspace(token[start])){
                     start++;
@@ -36,35 +55,24 @@ void countTokenFrequency(istream &inputFile, unordered_map<string, int> &frequen
                 }
                 start = end + 1;
             }
-
-            // Incrementa a contagem do token no frequencyMap
-            // frequencyMap[token]++;
         }
     }
-
 }
 
-// Função para imprimir a frequência dos tokens
-void printTokenFrequency(const unordered_map<string, int> &frequencyMap){
-    for(const auto &entry : frequencyMap){
-        cout << "Palavra: " << entry.first << " | Frequência: " << entry.second << endl;
-    }
-}
-
-// Função para ler um arquivo de texto e contar a frequência de tokens
-void readFile(const string &fileName){
-    ifstream inputFile(fileName);
+void readFile(const string &filePath){
+    ifstream inputFile(filePath);
 
     if(!inputFile.is_open()){
-        cout << "Erro ao abrir o arquivo de texto: " << fileName << endl;
+        cout << VERMELHO << "Erro ao abrir o arquivo de texto: " << filePath << RESET << endl;
         return;
     }
 
     unordered_map<string, int> frequencyMap;
+    unordered_set<string> stopwords = readStopwords("./dataset/stopwords.txt");
 
-    countTokenFrequency(inputFile, frequencyMap);
-    printTokenFrequency(frequencyMap);
+    processText(inputFile, frequencyMap, stopwords);
+    int k = 10;
+    processHash(frequencyMap, k);
 
     inputFile.close();
-
 }
