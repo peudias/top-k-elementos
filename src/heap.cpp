@@ -12,11 +12,18 @@ void processHash(const unordered_map<string, int> &frequencyMap, int k){
         }
     }
 
+    cout << MAGENTA << "|===== Top-K-Elementos =====|" << RESET << endl;
+    cout << MAGENTA << "|== " << VERMELHO << "Palavra" << AMARELO << " vs." << VERDE << "Frequência" << MAGENTA << " ==|" << endl;
     int counter = 1;
     while(!minHeap.empty()){
         const HeapNode &node = minHeap.top();
-        cout << counter << ". " << "Palavra: " << VERMELHO << node.word << RESET << " | Frequência: " << VERDE << node.count << RESET << endl;
+        cout << MAGENTA << "| " << RESET;
+        if(counter < 10 && counter > 0){
+            cout << "0";
+        }
+        cout << counter << ". " << VERMELHO << node.word << AMARELO << " vs. " << VERDE << node.count << RESET << endl;
         minHeap.pop();
         counter++;
     }
+    cout << MAGENTA << "|===========================|" << RESET << endl;
 }
