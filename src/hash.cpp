@@ -39,7 +39,7 @@ void processText(istream &inputStream, unordered_map<string, int> &frequencyMap,
 
             size_t start = 0;
             while(start < token.length()){
-                while(start < token.length() && isspace(token[start])){
+                while(start < token.length() && (isspace(token[start]) || ispunct(token[start]))){
                     start++;
                 }
                 size_t end = token.find_first_of(".,;:'?!()[]{}—", start);
