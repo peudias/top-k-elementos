@@ -42,7 +42,7 @@ void processText(istream &inputStream, unordered_map<string, int> &frequencyMap,
                 while(start < token.length() && (isspace(token[start]) || ispunct(token[start]))){
                     start++;
                 }
-                size_t end = token.find_first_of(".,;:'?!()[]{}—", start);
+                size_t end = token.find_first_of(".,;:'?!()[]{}—“”", start);
                 if(end == string::npos){
                     end = token.length();
                 }
