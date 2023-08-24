@@ -79,26 +79,6 @@ Em seguida é mostrado
 
 Por fim
 
-### Explicando um pouco sobre o código
-
-#### O algoritmo por completo possui 16 funções.
-
-### Funções presentes na [aaa.c](https://github.com/).
-
-1. void;
-
-### Funções presentes na [bbb.c](https://github.com/phpdias/).
-
-1. bool;
-
-### Funções presentes na [ccc.c](https://github.com/phpdias/).
-
-### Arquivos .h
-
-No geral contêm declarações de funções, variáveis, constantes e outras definições que são compartilhadas entre diferentes arquivos do código, mas abaixo, detalhes de um arquivo em específico.
-
-### Arquivo [const.h](https://github.com/phpdias/labirinto-recorrente/blob/main/src/include/const.h).
-
 ## Conclusão
 
 ## Compilação e Execução
