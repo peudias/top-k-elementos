@@ -105,7 +105,7 @@ No geral contêm declarações de funções, variáveis, constantes e outras def
 
 Este algoritmo possui um arquivo Makefile e um arquivo CMakeLists que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
 
-> Linux (Makefile)
+### Linux (Makefile):
 
 | Comando      | Função                                                                                  |
 | ------------ | --------------------------------------------------------------------------------------- |
@@ -114,13 +114,13 @@ Este algoritmo possui um arquivo Makefile e um arquivo CMakeLists que realiza to
 | `make run`   | Executa o programa da pasta build após a realização da compilação                       |
 | `make r`     | Realiza o `make clean`, `make` e `make run` juntos                                      |
 
-> Windows (CMakeLists)
+### Windows (CMakeLists):
 
-| Comando                       | Função                                                                                  |
-| ----------------------------- | --------------------------------------------------------------------------------------- |
-| `cmake -B ./build-debug`      | Apaga a última compilação realizada contida na pasta build                              |
-| `cmake --build ./build-debug` | Executa a compilação do programa utilizando o gcc, e o resultado vai para a pasta build |
-| `./build-debug/app`           | Executa o programa da pasta build após a realização da compilação                       |
+| Comando                       | Função                                                                                        |
+| ----------------------------- | --------------------------------------------------------------------------------------------- |
+| `cmake -B ./build-debug`      | Executa geração de arquivos e o resultado vai para a pasta build-debug                        |
+| `cmake --build ./build-debug` | Executa a compilação do programa utilizando o gcc, e o resultado vai para a pasta build-debug |
+| `./build-debug/app`           | Executa o programa da pasta build-debug após a realização da compilação                       |
 
 ## Contatos
 
