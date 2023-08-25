@@ -103,6 +103,14 @@ Ao implementar adequadamente esse algoritmo, sua complexidade é estimada em O(n
 
 ## Experimentação 🔬
 
+<div align="justify">
+	
+Nesta seção, apresentaremos os resultados do sistema envolvendo três tipos de entradas diferentes: [input0.txt](https://github.com/), [input1.txt](https://github.com/) e [stopwords.txt](https://github.com/). O objetivo desse tópico é demonstrar o resultado e a eficácia desse algoritmo em determinado cenário.
+
+A entrada consiste em um arquivo de texto sem formatação e escrito no padrão ASCII. O resultado obtido está na imagem abaixo.
+
+</div>
+
 ## Conclusão 🎯
 
 ## Resolução do problema ✅
