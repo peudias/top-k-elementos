@@ -1,12 +1,12 @@
 # 🔝 Top-K-Elementos 🔝
 
-<p>
-<div style="display: inline-block;">
 
-![C++](https://img.shields.io/badge/-C++-05122A?style=flat&logo=Cplusplus)&nbsp;
-![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat&logo=visual-studio-code&logoColor=007ACC)&nbsp;
-
-</p>
+<div style="display: inline_block" align="left">
+  <img align="center" alt="VS" src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />
+  <img align="center" alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
+  <img align="center" alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+  <img align="center" alt="Linux" src="https://img.shields.io/badge/Windows-FCC624?style=for-the-badge&logo=windows&logoColor=blue" />
+</div>
 
 ## Questionário:
 
