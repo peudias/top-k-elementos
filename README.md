@@ -69,7 +69,7 @@ A abordagem envolve duas etapas principais. Primeiro, é preciso determinar a fr
 
 A segunda etapa envolve a identificação dos k itens de maior valor. Nesse contexto, "valor" é determinado pela frequência do item na coleção. Para manter um controle eficiente desses k itens de maior valor, utilizou-se uma estrutura de dados chamada heap. Um heap é uma árvore especial em que cada nó tem um valor associado, e os nós são organizados de maneira que o nó pai tenha sempre um valor maior do que seus nós filhos (no caso de um heap máximo - e, de forma arbitrária, o heap mínimo possui valor do nó pai sempre menor que o valor de seus nós filhos). Isso permite manter constantemente o item de menor valor entre os k itens de maior valor, facilitando a substituição quando um novo item mais valioso é encontrado.
 
-Agora, a pergunta é: como podemos implementar essa solução usando C/C++? Como podemos criar um hash para contar as frequências dos itens e um heap para manter os k itens de maior valor? Qual é a complexidade temporal e espacial dessa solução? Ao explorarmos essas questões, estaremos preparados para enfrentar esse desafio dos top k itens e aplicar nosso conhecimento sobre hash e heap para obter resultados eficientes e precisos.
+Agora, a pergunta é: como podemos implementar essa solução usando C++? Como podemos criar um hash para contar as frequências dos itens e um heap para manter os k itens de maior valor? Qual é a complexidade temporal e espacial dessa solução? Ao explorarmos essas questões, estaremos preparados para enfrentar esse desafio dos top k itens e aplicar nosso conhecimento sobre hash e heap para obter resultados eficientes e precisos.
 
 </div>
 
