@@ -95,11 +95,9 @@ No processo de abordar o problema dos top k itens, é essencial construir uma á
 
 4. **No final, a heap conterá os k elementos com maiores valores (frequências) da coleção de dados. Então, imprima-os em ordem crescente.**
 
+## Resolução do problema ✅
+
 ## Representação gráfica 📷
-
-## Análise de Complexidade 🔎
-
-Ao implementar adequadamente esse algoritmo, sua complexidade é estimada em O(nlogk), em que 'n' denota o tamanho total da coleção de dados e 'k' representa o número de elementos mais relevantes que são considerados. Essa análise reflete a eficiência do algoritmo na gestão de grandes conjuntos de dados ao empregar estruturas de dados como hash e heap, contribuindo para um desempenho otimizado na identificação dos elementos mais significativos.
 
 ## Experimentação 🔬
 
@@ -107,35 +105,19 @@ Ao implementar adequadamente esse algoritmo, sua complexidade é estimada em O(n
 	
 Nesta seção, apresentaremos os resultados do sistema envolvendo três tipos de entradas diferentes: [input0.txt](https://github.com/), [input1.txt](https://github.com/) e [stopwords.txt](https://github.com/). O objetivo desse tópico é demonstrar o resultado e a eficácia desse algoritmo em determinado cenário.
 
-A entrada consiste em um arquivo de texto sem formatação e escrito no padrão ASCII. O resultado obtido está na imagem abaixo.
-
-<div align="center">
-
-![Screenshot from 2023-08-24 23-52-06](https://github.com/phpdias/top-k-elementos/assets/84406892/359edb92-d96f-4479-93be-0e3ba8dea5ab)
-
-</div>
-
-</div>
-
-## Conclusão 🎯
-
-## Resolução do problema ✅
-
-A seguir, três seções das quais abordo a resolução do problema, desde a [entrada de dados](https://github.com/phpdias/), [saída de dados](https://github.com/phpdias/) e uma rápida explicação de cada uma das [funções imeplementadas](https://github.com/phpdias/) no programa.
-
-## Entradas de dados necessárias 🔡
+### Entradas de dados necessárias 🔡
 
 No programa existe uma pasta nomeada como `dataset`, que dentro contém um outro diretório `input` e um documento chamado `stopwords.txt`.
 
-## Diretório input 🔡
+### Diretório input 🔡
 
-## Arquivo stopwords.txt 🔣
+### Arquivo stopwords.txt 🔣
 
 Este arquivo foi retirado desse repositório git utilizado como referência: [Labirinto Recorrente](https://github.com/phpdias/labirinto-recorrente) [^1]
 
 Analogamente, também pode ser digitado manualmente pelo usuário, mas não é o intuito que utilize dessa forma.
 
-## Saídas obtidas
+### Saídas obtidas
 
 Ao executar o programa, a seguinte saída será geradas.
 
@@ -147,7 +129,24 @@ Em seguida é mostrado
 
 Por fim
 
-## Conclusão
+A entrada consiste em um arquivo de texto sem formatação e escrito no padrão ASCII. O resultado obtido está na imagem abaixo.
+
+<div align="center">
+
+![Screenshot from 2023-08-24 23-52-06](https://github.com/phpdias/top-k-elementos/assets/84406892/359edb92-d96f-4479-93be-0e3ba8dea5ab)
+
+</div>
+
+</div>
+
+A seguir, três seções das quais abordo a resolução do problema, desde a [entrada de dados](https://github.com/phpdias/), [saída de dados](https://github.com/phpdias/) e uma rápida explicação de cada uma das [funções imeplementadas](https://github.com/phpdias/) no programa.
+
+## Análise de Complexidade 🔎
+
+Ao implementar adequadamente esse algoritmo, sua complexidade é estimada em O(nlogk), em que 'n' denota o tamanho total da coleção de dados e 'k' representa o número de elementos mais relevantes que são considerados. Essa análise reflete a eficiência do algoritmo na gestão de grandes conjuntos de dados ao empregar estruturas de dados como hash e heap, contribuindo para um desempenho otimizado na identificação dos elementos mais significativos.
+
+
+## Conclusão 🎯
 
 # Compilação e Execução 🔄
 
