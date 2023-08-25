@@ -1,4 +1,4 @@
-# Top-K-Elements
+# Top-K-Elementos
 
 <p>
 <div style="display: inline-block;">
@@ -45,23 +45,47 @@ adotadas são as melhores possíveis para o problema em questão.
 
 ==================================================================================================
 
-## Apresentando o problema
+## Wiki do Projeto 📚
 
-## Regras
+<div align="justify">
 
-## Sobre o Labirinto Recorrente
+Para obter informações mais detalhadas sobre o projeto acesse a [**Wiki**](https://github.com/phpdias/top-k-elementos/wiki). 
 
-### Resolução do problema
+Na Wiki, você terá acesso à documentação completa, instruções de execução e detalhes sobre as estruturas de dados, algoritmos utilizados e outros aspectos relevantes do projeto.
+
+</div>
+
+## Apresentando o problema 📝
+
+<div align="justify">
+
+</div>
+
+## Implementação do Problema 💡
+
+## Representação gráfica :camera:
+
+## Análise de Complexidade 🔎
+
+## Experimentação 🔬
+
+## Conclusão 🎯
+
+## Regras 📜
+
+## Sobre o Labirinto Recorrente 🤷‍♂️
+
+### Resolução do problema ✅
 
 A seguir, três seções das quais abordo a resolução do problema, desde a [entrada de dados](https://github.com/phpdias/), [saída de dados](https://github.com/phpdias/) e uma rápida explicação de cada uma das [funções imeplementadas](https://github.com/phpdias/) no programa.
 
-### Entradas de dados necessárias
+### Entradas de dados necessárias 🔡
 
 No programa existe uma pasta nomeada como `dataset`, que dentro contém um outro diretório `input` e um documento chamado `stopwords.txt`.
 
-#### Diretório input
+#### Diretório input 🔡
 
-#### Arquivo stopwords.txt
+#### Arquivo stopwords.txt 🔣
 
 Este arquivo foi retirado desse repositório git utilizado como referência: [Labirinto Recorrente](https://github.com/phpdias/labirinto-recorrente) [^1]
 
@@ -81,7 +105,8 @@ Por fim
 
 ## Conclusão
 
-## Compilação e Execução
+
+# Compilação e Execução 🔄
 
 Este algoritmo possui um arquivo Makefile e um arquivo CMakeLists que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
 
@@ -102,7 +127,7 @@ Este algoritmo possui um arquivo Makefile e um arquivo CMakeLists que realiza to
 | `cmake --build ./build-debug` | Executa a compilação do programa utilizando o gcc, e o resultado vai para a pasta build-debug |
 | `./build-debug/app`           | Executa o programa da pasta build-debug após a realização da compilação                       |
 
-## Contatos
+# Contatos 📞
 
 <div style="display: inline-block;">
 
