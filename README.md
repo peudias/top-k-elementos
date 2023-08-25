@@ -75,7 +75,7 @@ Agora, a pergunta é: como podemos implementar essa solução usando C++? Como p
 
 ## Implementação do Problema 💡
 
-## Representação gráfica :camera:
+## Representação gráfica 📷
 
 ## Análise de Complexidade 🔎
 
