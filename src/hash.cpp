@@ -12,7 +12,7 @@ unordered_set<string> readStopwords(const string &filename){
         }
         stopwordFile.close();
     } else{
-        cerr << VERMELHO << "Erro ao abrir o arquivo de stopwords" << RESET << endl;
+        cout << VERMELHO << "Erro ao abrir o arquivo de stopwords!" << RESET << endl;
     }
     return stopwords;
 }
