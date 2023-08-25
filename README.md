@@ -75,15 +75,33 @@ Agora, a pergunta é: como podemos implementar essa solução usando C++? Como p
 
 ## Implementação do Problema 💡
 
+**Contagem de Frequência com Tabela de Dispersão (Hash)**
+
+Uma etapa fundamental na resolução do desafio dos top k itens envolve a criação de uma tabela de dispersão, também conhecida como hash. Essa estrutura nos permite realizar a contagem eficiente da frequência de cada elemento tokenizado presente na coleção de dados de entrada.
+
+**Construção da Árvore de Prioridades (Heap)**
+
+No processo de abordar o problema dos top k itens, é essencial construir uma árvore de prioridades, também chamada de heap, com um tamanho fixo de k. Nessa etapa, os primeiros k elementos da tabela de dispersão (hash) são inseridos na árvore de prioridades, onde serão gerenciados de acordo com as propriedades de um heap, permitindo a identificação eficiente dos k itens de maior valor.
+
+## Regras 📜
+
+1. **Para cada elemento restante na hash, compare a contagem com o menor valor do heap.**
+
+2. **Se a contagem for maior do que o menor valor da heap, remova o menor valor, insira o novo elemento e refaça a estrutura.**
+
+3. **Caso contrário, ignore o elemento e vá para o próximo.**
+
+4. **No final, a heap conterá os k elementos com maiores valores (frequências) da coleção de dados. Então, imprima-os em ordem crescente.**
+
 ## Representação gráfica 📷
 
 ## Análise de Complexidade 🔎
 
+Ao implementar adequadamente esse algoritmo, sua complexidade é estimada em O(nlogk), em que 'n' denota o tamanho total da coleção de dados e 'k' representa o número de elementos mais relevantes que são considerados. Essa análise reflete a eficiência do algoritmo na gestão de grandes conjuntos de dados ao empregar estruturas de dados como hash e heap, contribuindo para um desempenho otimizado na identificação dos elementos mais significativos.
+
 ## Experimentação 🔬
 
 ## Conclusão 🎯
-
-## Regras 📜
 
 ## Sobre o Labirinto Recorrente 🤷‍♂️
 
