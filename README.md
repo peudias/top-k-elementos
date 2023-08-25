@@ -10,6 +10,8 @@
   <img align="center" alt="Makefile" src="https://img.shields.io/badge/Makefile-FF5733?style=for-the-badge" />
 </div>
 
+<!-- 
+
 ## Questionário:
 
 1. O código pode ser baixado do git? ✅
@@ -43,7 +45,7 @@ discussão sobre as estruturas adotadas e o motivo de tal utilização. Nesse ú
 tente realizar um paralelo com outras estruturas para demonstrar de fato que as estruturas
 adotadas são as melhores possíveis para o problema em questão.
 
-==================================================================================================
+================================================================================================== Seu comentário aqui -->
 
 ## Wiki do Projeto 📚
 
