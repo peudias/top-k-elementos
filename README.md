@@ -75,9 +75,6 @@ Agora, a pergunta é: como podemos implementar essa solução usando C++? Como p
 
 </div>
 
-
-
-
 ## Implementação do Problema 💡
 
 **Contagem de Frequência com Tabela de Dispersão (Hash)**
@@ -108,25 +105,23 @@ Ao implementar adequadamente esse algoritmo, sua complexidade é estimada em O(n
 
 ## Conclusão 🎯
 
-## Sobre o Labirinto Recorrente 🤷‍♂️
-
-### Resolução do problema ✅
+## Resolução do problema ✅
 
 A seguir, três seções das quais abordo a resolução do problema, desde a [entrada de dados](https://github.com/phpdias/), [saída de dados](https://github.com/phpdias/) e uma rápida explicação de cada uma das [funções imeplementadas](https://github.com/phpdias/) no programa.
 
-### Entradas de dados necessárias 🔡
+## Entradas de dados necessárias 🔡
 
 No programa existe uma pasta nomeada como `dataset`, que dentro contém um outro diretório `input` e um documento chamado `stopwords.txt`.
 
-#### Diretório input 🔡
+## Diretório input 🔡
 
-#### Arquivo stopwords.txt 🔣
+## Arquivo stopwords.txt 🔣
 
 Este arquivo foi retirado desse repositório git utilizado como referência: [Labirinto Recorrente](https://github.com/phpdias/labirinto-recorrente) [^1]
 
 Analogamente, também pode ser digitado manualmente pelo usuário, mas não é o intuito que utilize dessa forma.
 
-### Saídas obtidas
+## Saídas obtidas
 
 Ao executar o programa, a seguinte saída será geradas.
 
@@ -140,12 +135,11 @@ Por fim
 
 ## Conclusão
 
-
 # Compilação e Execução 🔄
 
 Este algoritmo possui um arquivo Makefile e um arquivo CMakeLists que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
 
-### Comandos para Linux:
+## Comandos para Linux:
 
 | <img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="30" height="30"/>      | Função                                                                                  |
 | ------------ | --------------------------------------------------------------------------------------- |
@@ -154,7 +148,7 @@ Este algoritmo possui um arquivo Makefile e um arquivo CMakeLists que realiza to
 | `make run`   | Executa o programa da pasta build após a realização da compilação                       |
 | `make r`     | Realiza o `make clean`, `make` e `make run` juntos                                      |
 
-### Comandos para Windows:
+## Comandos para Windows:
 
 | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/windows8/windows8-original.svg" alt="Windows Icon" width="30" height="30">                       | Função                                                                                        |
 | ----------------------------- | --------------------------------------------------------------------------------------------- |
