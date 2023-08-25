@@ -95,11 +95,11 @@ No processo de abordar o problema dos top k itens, é essencial construir uma á
 
 4. **No final, a heap conterá os k elementos com maiores valores (frequências) da coleção de dados. Então, imprima-os em ordem crescente.**
 
+## Representação gráfica 📷
+
 ## Resolução do problema ✅
 
 Agora, a pergunta é: como podemos implementar essa solução usando C++? Como podemos criar um hash para contar as frequências dos itens e um heap para manter os k itens de maior valor? Qual é a complexidade temporal e espacial dessa solução? Ao explorarmos essas questões, estaremos preparados para enfrentar esse desafio dos top k itens e aplicar nosso conhecimento sobre hash e heap para obter resultados eficientes e precisos.
-
-## Representação gráfica 📷
 
 ## Experimentação 🔬
 
