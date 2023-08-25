@@ -1,6 +1,5 @@
 # 🔝 Top-K-Elementos 🔝
 
-
 <div style="display: inline_block" align="left">
   <img align="center" alt="VS" src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />
   <img align="center" alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
@@ -10,7 +9,7 @@
   <img align="center" alt="Makefile" src="https://img.shields.io/badge/Makefile-FF5733?style=for-the-badge" />
 </div>
 
-<!-- 
+<!--
 
 ## Questionário:
 
@@ -51,9 +50,9 @@ adotadas são as melhores possíveis para o problema em questão.
 
 <div align="justify">
 
-Para obter informações mais detalhadas sobre o projeto acesse a [**Wiki**](https://github.com/phpdias/top-k-elementos/wiki). 
+Para obter informações mais detalhadas sobre o projeto, acesse a [**Wiki**](https://github.com/phpdias/top-k-elementos/wiki).
 
-Na Wiki, você terá acesso à documentação completa, instruções de execução e detalhes sobre as estruturas de dados, algoritmos utilizados e outros aspectos relevantes do projeto.
+Na Wiki, você terá acesso à documentação completa, instruções de execução e análise detalhada sobre as estruturas de dados, algoritmos utilizados e outros aspectos relevantes do projeto.
 
 </div>
 
@@ -77,11 +76,11 @@ Agora, a pergunta é: como podemos implementar essa solução usando C++? Como p
 
 ## Implementação do Problema 💡
 
-**Contagem de Frequência com Tabela de Dispersão (Hash)**
+### **Contagem de Frequência com Tabela de Dispersão (Hash)**
 
 Uma etapa fundamental na resolução do desafio dos top k itens envolve a criação de uma tabela de dispersão, também conhecida como hash. Essa estrutura nos permite realizar a contagem eficiente da frequência de cada elemento tokenizado presente na coleção de dados de entrada.
 
-**Construção da Árvore de Prioridades (Heap)**
+### **Construção da Árvore de Prioridades (Heap)**
 
 No processo de abordar o problema dos top k itens, é essencial construir uma árvore de prioridades, também chamada de heap, com um tamanho fixo de k. Nessa etapa, os primeiros k elementos da tabela de dispersão (hash) são inseridos na árvore de prioridades, onde serão gerenciados de acordo com as propriedades de um heap, permitindo a identificação eficiente dos k itens de maior valor.
 
@@ -99,25 +98,46 @@ No processo de abordar o problema dos top k itens, é essencial construir uma á
 
 ## Resolução do problema ✅
 
+Após a conclusão do projeto, temos aqui um algoritmo capaz de:
+
+- [✔️] Característica I;
+- [✔️] Característica II;
+- [✔️] Característica III;
+- [✔️] Característica IV;
+
+Vale informar aos que não conhecem, {🔎Caso seu programa utilize de alguma biblioteca específica para realizar alguma tarefa citada nas características, vale uma breve explicação, como mostra o exemplo ➝➝}[que tanto o Map quanto o Unordered_Map são estruturas próprias da vasta linguagem C++, portanto, no site Cplusplus (vide referência), é possível encontrar todas informações sobre estrutura, contexto, implementação e funções associadas de ambos os mapas.
+
+Após a apresentação do tema, bem como a demonstração da lógica, serão apresentados todos os resultados obtidos a partir dos testes feitos.
+
 Agora, a pergunta é: como podemos implementar essa solução usando C++? Como podemos criar um hash para contar as frequências dos itens e um heap para manter os k itens de maior valor? Qual é a complexidade temporal e espacial dessa solução? Ao explorarmos essas questões, estaremos preparados para enfrentar esse desafio dos top k itens e aplicar nosso conhecimento sobre hash e heap para obter resultados eficientes e precisos.
 
 ## Experimentação 🔬
 
 <div align="justify">
 	
-Nesta seção, apresentaremos os resultados do sistema envolvendo três tipos de entradas diferentes: [input0.txt](https://github.com/), [input1.txt](https://github.com/) e [stopwords.txt](https://github.com/). O objetivo desse tópico é demonstrar o resultado e a eficácia desse algoritmo em determinado cenário.
+Nesta seção, iremos apresentar o resultado do sistema envolvendo, em conjunto, três tipos de entradas diferentes: [input0.txt](https://github.com/phpdias/top-k-elementos/blob/main/dataset/input/input0.txt), [input1.txt](https://github.com/phpdias/top-k-elementos/blob/main/dataset/input/input1.txt) e [stopwords.txt](https://github.com/phpdias/top-k-elementos/blob/main/dataset/stopwords.txt). O propósito deste tópico é demonstrar o resultado e a eficácia desse algoritmo em um cenário específico. Em seguida, forneceremos uma breve explicação do conteúdo desses arquivos, juntamente com instruções sobre como o usuário pode realizar modificações, exclusões ou inclusões de novas coleções de dados.
 
-### Entradas de dados necessárias 🔡
+</div>
 
-No programa existe uma pasta nomeada como `dataset`, que dentro contém um outro diretório `input` e um documento chamado `stopwords.txt`.
+### Entradas de dados necessárias 🗂️
 
-### Diretório input 🔡
+Dentro do programa, encontra-se uma pasta denominada [dataset](https://github.com/phpdias/top-k-elementos/tree/main/dataset), a qual abriga, em seu interior, um outro diretório nomeado como [input](https://github.com/phpdias/top-k-elementos/tree/main/dataset/input) e um documento intitulado [stopwords.txt](https://github.com/phpdias/top-k-elementos/blob/main/dataset/stopwords.txt).
 
-### Arquivo stopwords.txt 🔣
+#### Diretório ./dataset/input 📂
+
+Neste diretório se encontram os arquivos em texto que serão lidos para a contagem da frequência de palavras.
+
+É estritamente necessário que todos os arquivos dentro desse diretório sejam do tipo `.txt` e seja nomeado como `inputX`.
+
+Exemplo: `input0.txt`, `input1.txt`...
+
+Isso é essencial porque o algoritmo faz um tratamento para concatenar todos os textos, e para isso é lido todos os arquivos da ./dataset/input
+
+#### Arquivo stopwords.txt 🛑
 
 Este arquivo foi retirado desse repositório git utilizado como referência: [Labirinto Recorrente](https://github.com/phpdias/labirinto-recorrente) [^1]
 
-Analogamente, também pode ser digitado manualmente pelo usuário, mas não é o intuito que utilize dessa forma.
+Analogamente, também pode ser digitado manualmente pelo usuário, mas não é o intuito inicial a utilização dessa forma.
 
 ### Saídas obtidas
 
@@ -147,7 +167,6 @@ A seguir, três seções das quais abordo a resolução do problema, desde a [en
 
 Ao implementar adequadamente esse algoritmo, sua complexidade é estimada em O(nlogk), em que 'n' denota o tamanho total da coleção de dados e 'k' representa o número de elementos mais relevantes que são considerados. Essa análise reflete a eficiência do algoritmo na gestão de grandes conjuntos de dados ao empregar estruturas de dados como hash e heap, contribuindo para um desempenho otimizado na identificação dos elementos mais significativos.
 
-
 ## Conclusão 🎯
 
 # Compilação e Execução 🔄
@@ -156,26 +175,26 @@ Este algoritmo possui um arquivo Makefile e um arquivo CMakeLists que realiza to
 
 ## Comandos para Linux:
 
-| <img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="30" height="30"/>      | Função                                                                                  |
-| ------------ | --------------------------------------------------------------------------------------- |
-| `make clean` | Apaga a última compilação realizada contida na pasta build                              |
-| `make`       | Executa a compilação do programa utilizando o gcc, e o resultado vai para a pasta build |
-| `make run`   | Executa o programa da pasta build após a realização da compilação                       |
-| `make r`     | Realiza o `make clean`, `make` e `make run` juntos                                      |
+| <img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="30" height="30"/> | Função                                                                                  |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| `make clean`                                                                                                                                            | Apaga a última compilação realizada contida na pasta build                              |
+| `make`                                                                                                                                                  | Executa a compilação do programa utilizando o gcc, e o resultado vai para a pasta build |
+| `make run`                                                                                                                                              | Executa o programa da pasta build após a realização da compilação                       |
+| `make r`                                                                                                                                                | Realiza o `make clean`, `make` e `make run` juntos                                      |
 
 ## Comandos para Windows:
 
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/windows8/windows8-original.svg" alt="Windows Icon" width="30" height="30">                       | Função                                                                                        |
-| ----------------------------- | --------------------------------------------------------------------------------------------- |
-| `cmake -B ./build-debug`      | Executa geração de arquivos e o resultado vai para a pasta build-debug                        |
-| `cmake --build ./build-debug` | Executa a compilação do programa utilizando o gcc, e o resultado vai para a pasta build-debug |
-| `./build-debug/app`           | Executa o programa da pasta build-debug após a realização da compilação                       |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/windows8/windows8-original.svg" alt="Windows Icon" width="30" height="30"> | Função                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| `cmake -B ./build-debug`                                                                                                                             | Executa geração de arquivos e o resultado vai para a pasta build-debug                        |
+| `cmake --build ./build-debug`                                                                                                                        | Executa a compilação do programa utilizando o gcc, e o resultado vai para a pasta build-debug |
+| `./build-debug/app`                                                                                                                                  | Executa o programa da pasta build-debug após a realização da compilação                       |
 
 # Contatos 📇
 
-| Contato           | Telegram                | LinkedIn           |   GitHub           |             
-| -----------------------| -----------------------|-----------------------|-----------------------|
-|  Pedro Dias            | <a href="https://t.me/phpdias"><img align="center" height="24px" width="90px" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>                                       			       | <a href="https://linkedin.com/in/phpd"><img align="center" height="24px" width="90px" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></div>| <a href="https://github.com/phpdias"><img align="center" height="24px" width="90px" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></div>
+| Contato    | Telegram                                                                                                                                                                             | LinkedIn                                                                                                                                                                                           | GitHub                                                                                                                                                                                       |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Pedro Dias | <a href="https://t.me/phpdias"><img align="center" height="24px" width="90px" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/> | <a href="https://linkedin.com/in/phpd"><img align="center" height="24px" width="90px" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></div> | <a href="https://github.com/phpdias"><img align="center" height="24px" width="90px" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></div> |
 
 ## Referências
 
