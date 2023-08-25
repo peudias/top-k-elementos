@@ -110,18 +110,18 @@ Por fim
 
 Este algoritmo possui um arquivo Makefile e um arquivo CMakeLists que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
 
-### Linux (Makefile):
+### Comandos para Linux:
 
-| Comando      | Função                                                                                  |
+| <img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="30" height="30"/>      | Função                                                                                  |
 | ------------ | --------------------------------------------------------------------------------------- |
 | `make clean` | Apaga a última compilação realizada contida na pasta build                              |
 | `make`       | Executa a compilação do programa utilizando o gcc, e o resultado vai para a pasta build |
 | `make run`   | Executa o programa da pasta build após a realização da compilação                       |
 | `make r`     | Realiza o `make clean`, `make` e `make run` juntos                                      |
 
-### Windows (CMakeLists):
+### Comandos para Windows:
 
-| Comando                       | Função                                                                                        |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/windows8/windows8-original.svg" alt="Windows Icon" width="30" height="30">                       | Função                                                                                        |
 | ----------------------------- | --------------------------------------------------------------------------------------------- |
 | `cmake -B ./build-debug`      | Executa geração de arquivos e o resultado vai para a pasta build-debug                        |
 | `cmake --build ./build-debug` | Executa a compilação do programa utilizando o gcc, e o resultado vai para a pasta build-debug |
