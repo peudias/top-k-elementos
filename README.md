@@ -10,11 +10,9 @@
 
 ## Questionário:
 
-1. O código pode ser baixado do git?
-2. O código executa com matrizes cujo tamanho é ímpar e imprime resultados corretamente?
-3. O código executa com matrizes cujo tamanho é par e imprime resultados corretamente?
-4. O código está bem estruturado e organizado?
-5. O código bem como a entrada seguem os padrões de pasta e nomes definidos?
+1. O código pode ser baixado do git? ✅
+4. O código está bem estruturado e organizado? ✅
+5. O código bem como a entrada seguem os padrões de pasta e nomes definidos? ✅
 
 ............................................................................
 
