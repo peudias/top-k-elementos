@@ -76,6 +76,8 @@ Agora, a pergunta é: como podemos implementar essa solução usando C++? Como p
 
 ## Implementação do Problema 💡
 
+[CPP Reference](https://en.cppreference.com/)  [^2]
+
 ### **Contagem de Frequência com Tabela de Dispersão (Hash)**
 
 Uma etapa fundamental na resolução do desafio dos top k itens envolve a criação de uma tabela de dispersão, também conhecida como hash. Essa estrutura nos permite realizar a contagem eficiente da frequência de cada elemento tokenizado presente na coleção de dados de entrada.
@@ -199,3 +201,4 @@ Este algoritmo possui um arquivo Makefile e um arquivo CMakeLists que realiza to
 ## Referências
 
 [^1]: [GitHub](https://github.com/phpdias/labirinto-recorrente)
+[^2]: [CppReference](https://en.cppreference.com/)
