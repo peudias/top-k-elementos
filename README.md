@@ -59,6 +59,18 @@ Na Wiki, você terá acesso à documentação completa, instruções de execuç�
 
 <div align="justify">
 
+**Solucionando o Desafio dos Top K Itens com Hash e Heap em C++**
+
+Imagine que você está trabalhando em um projeto que envolve a análise de grandes volumes de dados. Uma das tarefas essenciais nesse contexto é identificar os k itens mais valiosos em uma coleção de dados. Esses "itens valiosos" podem representar os produtos mais vendidos em um e-commerce, as palavras mais frequentes em um conjunto de documentos ou até mesmo os tópicos mais discutidos em uma rede social. A questão é: como podemos eficientemente resolver esse desafio?
+
+O problema dos top k itens é um exemplo clássico que surge em muitas aplicações do mundo real. A tarefa parece simples à primeira vista, mas quando lidamos com grandes conjuntos de dados, a eficiência se torna crucial. É nesse ponto que entram em jogo duas estruturas de dados fundamentais: o hash e o heap.
+
+A abordagem envolve duas etapas principais. Primeiro, é preciso determinar a frequência de cada item na coleção. Isso significa que necessita contar quantas vezes cada item aparece. Nesse momento é onde o hash entra em cena. Um hash permite armazenar e acessar rapidamente valores associados a chaves. Nesse caso, pode-se usar o hash para mapear cada item em sua contagem correspondente.
+
+A segunda etapa envolve a identificação dos k itens de maior valor. Nesse contexto, "valor" é determinado pela frequência do item na coleção. Para manter um controle eficiente desses k itens de maior valor, utilizou-se uma estrutura de dados chamada heap. Um heap é uma árvore especial em que cada nó tem um valor associado, e os nós são organizados de maneira que o nó pai tenha sempre um valor maior do que seus nós filhos (no caso de um heap máximo - e, de forma arbitrária, o heap mínimo possui valor do nó pai sempre menor que o valor de seus nós filhos). Isso permite manter constantemente o item de menor valor entre os k itens de maior valor, facilitando a substituição quando um novo item mais valioso é encontrado.
+
+Agora, a pergunta é: como podemos implementar essa solução usando C/C++? Como podemos criar um hash para contar as frequências dos itens e um heap para manter os k itens de maior valor? Qual é a complexidade temporal e espacial dessa solução? Ao explorarmos essas questões, estaremos preparados para enfrentar esse desafio dos top k itens e aplicar nosso conhecimento sobre hash e heap para obter resultados eficientes e precisos.
+
 </div>
 
 ## Implementação do Problema 💡
