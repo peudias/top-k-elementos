@@ -125,23 +125,11 @@ Este algoritmo possui um arquivo Makefile e um arquivo CMakeLists que realiza to
 | `cmake --build ./build-debug` | Executa a compilação do programa utilizando o gcc, e o resultado vai para a pasta build-debug |
 | `./build-debug/app`           | Executa o programa da pasta build-debug após a realização da compilação                       |
 
-# Contatos 📞
+# Contatos 📇
 
-<div style="display: inline-block;">
-
-<a href="https://t.me/phpdias" target="_blank">
-  <img align="center" src="https://img.shields.io/badge/-phpdias-05122A?style=flat&logo=telegram" alt="telegram"/>
-</a>
-  
-<a href="https://linkedin.com/in/phpd" target="_blank">
-  <img align="center" src="https://img.shields.io/badge/-phpd-05122A?style=flat&logo=linkedin" alt="linkedin"/>
-</a>
-
-<a style="color:black" href="mailto:phpdias@outlook.com?subject=[GitHub]%20O%20Labirinto%20Recorrente">
- <img align="center" src="https://img.shields.io/badge/-phpdias@outlook.com-05122A?style=flat&logo=email" alt="email"/>
-</a>
-
-</div>
+| Contato           | Telegram                | LinkedIn           |   GitHub           |             
+| -----------------------| -----------------------|-----------------------|-----------------------|
+|  Pedro Dias            | <a href="https://t.me/phpdias"><img align="center" height="20px" width="90px" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>                                       			       | <a href="https://linkedin.com/in/phpd"><img align="center" height="20px" width="90px" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></div>| <a href="https://github.com/phpdias"><img align="center" height="20px" width="90px" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></div>
 
 ## Referências
 
