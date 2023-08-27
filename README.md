@@ -39,10 +39,11 @@ e o motivo de sua escolha para manter o desempenho da solução. ✅
 de seu trabalho para arquivos de entrada diferentes dos adotados durante os testes. ✅
 
 • Um git contendo todo o projeto, bem como, toda descrição pertinente sobre sua execução,
-projeto e implementação. Neste documento (README.mb), espera-se observar uma
-discussão sobre as estruturas adotadas e o motivo de tal utilização. Nesse último ponto,
-tente realizar um paralelo com outras estruturas para demonstrar de fato que as estruturas
-adotadas são as melhores possíveis para o problema em questão.
+projeto e implementação.✅
+
+•  Neste documento (README.mb), espera-se observar uma discussão sobre as estruturas adotadas e o motivo de tal utilização. 
+Nesse último ponto, tente realizar um paralelo com outras estruturas para demonstrar de fato que as estruturas
+adotadas são as melhores possíveis para o problema em questão. ✅
 
 ================================================================================================== Seu comentário aqui -->
 
