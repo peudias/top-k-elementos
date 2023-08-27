@@ -220,7 +220,7 @@ O resultado obtido está na imagem abaixo.
 
 ## Análise de Complexidade 🔎
 
-Ao implementar adequadamente esse algoritmo, sua complexidade é estimada em O(nlogk), em que 'n' denota o tamanho total da coleção de dados e 'k' representa o número de elementos mais relevantes que são considerados. Essa análise reflete a eficiência do algoritmo na gestão de grandes conjuntos de dados ao empregar estruturas de dados como hash e heap, contribuindo para um desempenho otimizado na identificação dos elementos mais significativos.
+O algoritmo apresentado envolve a leitura e concatenação de arquivos de texto, processamento de texto para remoção de pontuação e stopwords, geração de um heap mínimo para armazenar as palavras mais frequentes, e a impressão dos principais elementos desse heap. O custo do algoritmo é influenciado pelo número e tamanho dos arquivos de entrada, sendo a leitura e concatenação dos arquivos linear em relação ao tamanho total, o processamento de texto linear em relação ao tamanho do texto, a geração do heap mínimo O(n \* log k), onde n é o número de palavras únicas, e a impressão do heap proporcional a k, o número de elementos principais no heap. A eficiência real depende da implementação das estruturas de dados e de otimizações específicas do compilador.
 
 ## Conclusão 🎯
 
