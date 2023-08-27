@@ -31,9 +31,9 @@ A documentação a ser produzida deve conter, pelo menos, as seguintes partes:
 
 • Um detalhamento mínimo que explique as fases de especificação, projeto e implemen-
 tação. Nessa etapa, deve-se incluir uma ampla discussão sobre as estruturas utilizadas
-e o motivo de sua escolha para manter o desempenho da solução.
+e o motivo de sua escolha para manter o desempenho da solução. ✅
 
-• Para os arquivos utilizados para teste, uma descrição da saída esperada.
+• Para os arquivos utilizados para teste, uma descrição da saída esperada. ✅
 
 • Uma parte do README.md contendo todas as instruções necessárias para a execução
 de seu trabalho para arquivos de entrada diferentes dos adotados durante os testes.
@@ -227,6 +227,8 @@ Analogamente, também pode ser digitado manualmente pelo usuário, mas não é o
 ### Saídas obtidas
 
 <div align="justify">
+
+A seguir, para os arquivos utilizados para teste, uma descrição da saída esperada.
 
 Após garantir o correto funcionamento dos arquivos acima, ao executar o programa, a seguinte saída será gerada.
 
