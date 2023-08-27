@@ -76,9 +76,15 @@ Agora, a pergunta é: como podemos implementar essa solução usando C++? Como p
 
 ## Implementação do Problema 💡
 
+<div align="justify">
+
 Nesse tópico uma breve análise das propriedades e funcionalidades do projeto. Para informações detalhadas e mais aprofundadas, acesse a [**Wiki**](https://github.com/phpdias/top-k-elementos/wiki).
 
+</div>
+
 **Processamento de Texto e Manipulação de Arquivos em C++**
+
+<div align="justify">
 
 O arquivo main do código demonstra um método de como processar texto e manipular arquivos em C++. Por meio de diversas bibliotecas e funcionalidades da linguagem, percorre arquivos de texto em um diretório especificado, lê seus conteúdos, realiza operações de processamento de texto e cria um mapa de frequência das palavras encontradas.
 
@@ -146,6 +152,8 @@ Referências para as funções utilizadas:
 
 [CPlusPlus](https://en.cppreference.com/) [^3]
 
+</div>
+
 ## Regras 📜
 
 No arquivo disponibilizado pelo professor da disciplina, houveram algumas regras explícitas para serem seguidas. Disponível a seguir:
@@ -180,9 +188,15 @@ Nesta seção, iremos apresentar o resultado do sistema envolvendo, em conjunto,
 
 ### Entradas de dados necessárias 🗂️
 
+<div align="justify">
+
 Dentro do programa, encontra-se uma pasta denominada [dataset](https://github.com/phpdias/top-k-elementos/tree/main/dataset), a qual abriga, em seu interior, um outro diretório nomeado como [input](https://github.com/phpdias/top-k-elementos/tree/main/dataset/input) e um documento intitulado [stopwords.txt](https://github.com/phpdias/top-k-elementos/blob/main/dataset/stopwords.txt).
 
+</div>
+
 #### Diretório ./dataset/input 📂
+
+<div align="justify">
 
 Neste diretório se encontram os arquivos em texto que serão lidos para a contagem da frequência de palavras.
 
@@ -192,13 +206,21 @@ Exemplo: `input0.txt`, `input1.txt`...
 
 Isso é essencial porque o algoritmo faz um tratamento para concatenar todos os textos, e para isso é lido todos os arquivos da `./dataset/input`.
 
+</div>
+
 #### Arquivo stopwords.txt 🛑
+
+<div align="justify">
 
 Este arquivo foi retirado desse repositório git utilizado como referência: [Labirinto Recorrente](https://github.com/phpdias/labirinto-recorrente) [^1]
 
 Analogamente, também pode ser digitado manualmente pelo usuário, mas não é o intuito inicial a utilização dessa forma.
 
+</div>
+
 ### Saídas obtidas
+
+<div align="justify">
 
 Após garantir o correto funcionamento dos arquivos acima, ao executar o programa, a seguinte saída será gerada.
 
@@ -210,6 +232,8 @@ A entrada consiste em um arquivo de texto sem formatação e escrito no padrão 
 
 O resultado obtido está na imagem abaixo.
 
+</div>
+
 <div align="center">
 
 ![Screenshot from 2023-08-24 23-52-06](https://github.com/phpdias/top-k-elementos/assets/84406892/359edb92-d96f-4479-93be-0e3ba8dea5ab)
@@ -220,9 +244,15 @@ O resultado obtido está na imagem abaixo.
 
 ## Análise de Complexidade 🔎
 
+<div align="justify">
+
 O algoritmo apresentado envolve a leitura e concatenação de arquivos de texto, processamento de texto para remoção de pontuação e stopwords, geração de um heap mínimo para armazenar as palavras mais frequentes, e a impressão dos principais elementos desse heap. O custo do algoritmo é influenciado pelo número e tamanho dos arquivos de entrada, sendo a leitura e concatenação dos arquivos linear em relação ao tamanho total, o processamento de texto linear em relação ao tamanho do texto, a geração do heap mínimo O(n \* log k), onde n é o número de palavras únicas, e a impressão do heap proporcional a k, o número de elementos principais no heap. A eficiência real depende da implementação das estruturas de dados e de otimizações específicas do compilador.
 
+</div>
+
 ## Conclusão 🎯
+
+<div align="justify">
 
 O projeto apresentado oferece uma visão prática de como C++ pode ser usado para processar e analisar dados textuais por meio de operações de leitura de arquivos, processamento de texto e uso de técnicas de hashing. Ele ilustra a importância das bibliotecas padrão da linguagem e das técnicas de programação eficiente para lidar com tarefas de processamento de dados. Esse código serve como exemplo da versatilidade do C++ e da sua aplicação em cenários que envolvem análise de texto e manipulação de arquivos.
 
@@ -230,9 +260,15 @@ Em conclusão, o `hash.cpp` apresenta um método robusto para processar textos, 
 
 Há também a demonstração da eficácia dos heaps mínimos na identificação dos "k" elementos de maior frequência a partir de um mapa de frequência de palavras. Essa abordagem otimizada permite a manipulação de grandes volumes de dados de maneira eficiente, sendo especialmente útil em cenários nos quais a análise da frequência de palavras é essencial, como processamento de texto, análise de dados linguísticos e muito mais. Ao utilizar as propriedades dos heaps mínimos, o código oferece uma solução escalonável e eficaz para essa tarefa específica.
 
+</div>
+
 # Compilação e Execução 🔄
 
+<div align="justify">
+
 Este algoritmo possui um arquivo Makefile e um arquivo CMakeLists que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
+
+</div>
 
 ## Comandos para Linux:
 
