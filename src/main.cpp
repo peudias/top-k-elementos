@@ -24,7 +24,7 @@ int main(){
     unordered_set<string> stopwords = readStopwords("./dataset/stopwords.txt");
 
     processText(concatenatedStream, frequencyMap, stopwords);
-    int k = 21;
+    int k = 20;
     processHash(frequencyMap, k);
 
     return 0;
