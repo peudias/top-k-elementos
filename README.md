@@ -83,7 +83,7 @@ Nesse tópico uma breve análise das propriedades e funcionalidades do projeto. 
 
 </div>
 
-**Processamento de Texto e Manipulação de Arquivos em C++**
+### **Processamento de Texto e Manipulação de Arquivos em C++**
 
 <div align="justify">
 
