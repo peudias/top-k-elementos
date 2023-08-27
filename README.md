@@ -145,15 +145,13 @@ Analogamente, também pode ser digitado manualmente pelo usuário, mas não é o
 
 ### Saídas obtidas
 
-Ao executar o programa, a seguinte saída será geradas.
+Ao executar o programa, a seguinte saída será gerada.
 
-Observe que
+Observe que existe um padrão nas impressões. Na primeira posição, por utilizar o `minHeap`, sempre irá ter a palavra com menor frequência dentre os k itens mais frequentes.
 
-Primeiro é impresso
+Primeiro é impresso a palavra, em vermelho.
 
-Em seguida é mostrado
-
-Por fim
+Em seguida é mostrado a frequência com que essa palavra é repetida durante todos os textos.
 
 A entrada consiste em um arquivo de texto sem formatação e escrito no padrão ASCII. O resultado obtido está na imagem abaixo.
 
