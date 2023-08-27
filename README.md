@@ -116,6 +116,19 @@ Dessa forma, essa função percorre o texto palavra por palavra, realizando o pr
 
 No processo de abordar o problema dos top k itens, é essencial construir uma árvore de prioridades, também chamada de heap, com um tamanho fixo de k. Nessa etapa, os primeiros k elementos da tabela de dispersão (hash) são inseridos na árvore de prioridades, onde serão gerenciados de acordo com as propriedades de um heap, permitindo a identificação eficiente dos k itens de maior valor.
 
+O código aplicado implementa uma série de funções que lidam com a manipulação de um heap mínimo (min-heap) para encontrar e exibir os "k" elementos de maior frequência de um mapa de frequência de palavras. Vou discutir brevemente as propriedades e a funcionalidade desse trecho de código abaixo:
+
+**Exploração de Heaps Mínimos para Encontrar os "k" Elementos de Maior Frequência**
+
+1. **Uso de Heap Mínimo para Manter os "k" Elementos de Maior Frequência:**
+   Para este projeto, utilizou-se a estrutura de dados do heap mínimo para armazenar os "k" elementos de maior frequência. Isso é alcançado através da função `insertToMinHeap`, que insere elementos no heap, garantindo que o heap sempre contenha os "k" elementos mais frequentes encontrados até o momento. A lógica é que, quando o heap atinge tamanho "k", se um novo elemento tiver uma frequência maior que a do menor elemento atual no heap, o menor elemento é removido e o novo elemento é inserido.
+
+2. **Iteração sobre o Heap para Impressão dos Resultados:**
+   A função `printMinHeap` é responsável por iterar sobre o heap mínimo resultante e exibir os "k" elementos de maior frequência, juntamente com suas frequências associadas. A saída é formatada de maneira agradável, destacando a palavra e sua frequência. A exibição dos resultados é uma etapa crucial para compreender a análise e interpretação dos dados processados.
+
+3. **Processamento do Mapa de Frequência:**
+   A função `processHash` recebe um mapa de frequência de palavras e um valor "k" como parâmetros. Ela itera sobre as entradas do mapa, criando objetos `HeapNode` para cada palavra e sua frequência correspondente. Esses objetos são então inseridos no heap mínimo através da função `insertToMinHeap`. Uma vez que todas as entradas foram processadas e o heap contém os "k" elementos mais frequentes, a função `printMinHeap` é chamada para exibir os resultados.
+
 ## Regras 📜
 
 1. **Para cada elemento restante na hash, compare a contagem com o menor valor do heap.**
@@ -200,6 +213,8 @@ Ao implementar adequadamente esse algoritmo, sua complexidade é estimada em O(n
 ## Conclusão 🎯
 
 Em conclusão, o `hash.cpp` apresenta um método robusto para processar textos, calcular a frequência de palavras relevantes e desconsiderar stopwords, o que é uma etapa fundamental em várias aplicações de processamento de linguagem natural, como análise de sentimentos, extração de informações e sumarização de texto. A implementação cuidadosa das etapas de pré-processamento e a consideração das stopwords tornam esse código uma ferramenta eficaz para analisar e compreender melhor o conteúdo de um texto.
+
+O projeto em si demonstra a eficácia dos heaps mínimos na identificação dos "k" elementos de maior frequência a partir de um mapa de frequência de palavras. Essa abordagem otimizada permite a manipulação de grandes volumes de dados de maneira eficiente, sendo especialmente útil em cenários nos quais a análise da frequência de palavras é essencial, como processamento de texto, análise de dados linguísticos e muito mais. Ao utilizar as propriedades dos heaps mínimos, o código oferece uma solução escalonável e eficaz para essa tarefa específica.
 
 # Compilação e Execução 🔄
 
