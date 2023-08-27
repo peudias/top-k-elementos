@@ -154,6 +154,12 @@ Referências para as funções utilizadas:
 
 </div>
 
+## Detalhamento sobre as fases de especificação, projeto e implementação. 
+
+Nessa etapa, está inclusa uma ampla discussão sobre as estruturas utilizadas e o motivo da escolha para manter o desempenho da solução.
+
+Para este projeto, houve um cuidadoso emprego de estruturas para eficiência. A escolha de um heap mínimo (minHeap) para identificar as palavras mais frequentes, em conjunto com o uso de unordered_map para o mapeamento das palavras e suas frequências, reflete uma abordagem sensata para otimizar a recuperação das palavras com maiores contagens. Isso reduz a complexidade de tempo e possibilita a identificação dos K elementos mais relevantes. A estratégia de filtrar stopwords, otimizando o cálculo de frequência, também atesta a consideração pelo desempenho. Em resumo, a fase de especificação moldou a solução em detalhes, o projeto traduziu esses detalhes em estruturas eficientes e a implementação executou a visão concebida, culminando em um sistema coeso e de alto desempenho para análise de frequência de palavras.
+
 ## Regras 📜
 
 No arquivo disponibilizado pelo professor da disciplina, houveram algumas regras explícitas para serem seguidas. Disponível a seguir:
