@@ -91,10 +91,6 @@ O arquivo main do código demonstra um método de como processar texto e manipul
 3. **Uso de Hashing:**
    Após o processamento das frequências das palavras, o código chama a função `processHash`, que leva o mapa de frequência e um valor `k` como argumentos.
 
-[CPP Reference](https://en.cppreference.com/) [^2]
-
-[CPlusPlus](https://en.cppreference.com/) [^3]
-
 ### **Contagem de Frequência com Tabela de Dispersão (Hash)**
 
 Uma etapa fundamental na resolução do desafio dos top k itens envolve a criação de uma tabela de dispersão, também conhecida como hash table. Essa estrutura nos permite realizar a contagem eficiente da frequência de cada elemento tokenizado presente na coleção de dados de entrada.
@@ -144,6 +140,12 @@ O código aplicado implementa uma série de funções que lidam com a manipulaç
 3. **Processamento do Mapa de Frequência:**
    A função `processHash` recebe um mapa de frequência de palavras e um valor "k" como parâmetros. Ela itera sobre as entradas do mapa, criando objetos `HeapNode` para cada palavra e sua frequência correspondente. Esses objetos são então inseridos no heap mínimo através da função `insertToMinHeap`. Uma vez que todas as entradas foram processadas e o heap contém os "k" elementos mais frequentes, a função `printMinHeap` é chamada para exibir os resultados.
 
+Referências para as funções utilizadas:
+
+[CPP Reference](https://en.cppreference.com/) [^2]
+
+[CPlusPlus](https://en.cppreference.com/) [^3]
+
 ## Regras 📜
 
 No arquivo disponibilizado pelo professor da disciplina, houveram algumas regras explícitas para serem seguidas. Disponível a seguir:
@@ -160,16 +162,13 @@ No arquivo disponibilizado pelo professor da disciplina, houveram algumas regras
 
 Após a conclusão do projeto, temos aqui um algoritmo capaz de:
 
-- [✔️] Característica I;
-- [✔️] Característica II;
-- [✔️] Característica III;
-- [✔️] Característica IV;
-
-Vale informar aos que não conhecem, {🔎Caso seu programa utilize de alguma biblioteca específica para realizar alguma tarefa citada nas características, vale uma breve explicação, como mostra o exemplo ➝➝}[que tanto o Map quanto o Unordered_Map são estruturas próprias da vasta linguagem C++, portanto, no site Cplusplus (vide referência), é possível encontrar todas informações sobre estrutura, contexto, implementação e funções associadas de ambos os mapas.
+- [✔️] Ler uma quantidade não determinada de textos;
+- [✔️] Processar esses textos tratando a questão de letras maiúsculas, minúsculas, espaços e pontuações;
+- [✔️] Remoção de StopWords;
+- [✔️] Utilização de Hash e Heap;
+- [✔️] Demonstrar de forma eficaz os Top-K-Elementos de um conjunto de dados;
 
 Após a apresentação do tema, bem como a demonstração da lógica, serão apresentados todos os resultados obtidos a partir dos testes feitos.
-
-Agora, a pergunta é: como podemos implementar essa solução usando C++? Como podemos criar um hash para contar as frequências dos itens e um heap para manter os k itens de maior valor? Qual é a complexidade temporal e espacial dessa solução? Ao explorarmos essas questões, estaremos preparados para enfrentar esse desafio dos top k itens e aplicar nosso conhecimento sobre hash e heap para obter resultados eficientes e precisos.
 
 ## Experimentação 🔬
 
@@ -191,7 +190,7 @@ Neste diretório se encontram os arquivos em texto que serão lidos para a conta
 
 Exemplo: `input0.txt`, `input1.txt`...
 
-Isso é essencial porque o algoritmo faz um tratamento para concatenar todos os textos, e para isso é lido todos os arquivos da ./dataset/input
+Isso é essencial porque o algoritmo faz um tratamento para concatenar todos os textos, e para isso é lido todos os arquivos da `./dataset/input`.
 
 #### Arquivo stopwords.txt 🛑
 
@@ -201,15 +200,15 @@ Analogamente, também pode ser digitado manualmente pelo usuário, mas não é o
 
 ### Saídas obtidas
 
-Ao executar o programa, a seguinte saída será gerada.
+Após garantir o correto funcionamento dos arquivos acima, ao executar o programa, a seguinte saída será gerada.
 
 Observe que existe um padrão nas impressões. Na primeira posição, por utilizar o `minHeap`, sempre irá ter a palavra com menor frequência dentre os k itens mais frequentes.
 
-Primeiro é impresso a palavra, em vermelho.
+Primeiro é impresso a palavra, em vermelho. Em seguida é mostrado a frequência com que essa palavra é repetida durante todos os textos.
 
-Em seguida é mostrado a frequência com que essa palavra é repetida durante todos os textos.
+A entrada consiste em um arquivo de texto sem formatação e escrito no padrão ASCII.
 
-A entrada consiste em um arquivo de texto sem formatação e escrito no padrão ASCII. O resultado obtido está na imagem abaixo.
+O resultado obtido está na imagem abaixo.
 
 <div align="center">
 
@@ -218,8 +217,6 @@ A entrada consiste em um arquivo de texto sem formatação e escrito no padrão 
 </div>
 
 </div>
-
-A seguir, três seções das quais abordo a resolução do problema, desde a [entrada de dados](https://github.com/phpdias/), [saída de dados](https://github.com/phpdias/) e uma rápida explicação de cada uma das [funções imeplementadas](https://github.com/phpdias/) no programa.
 
 ## Análise de Complexidade 🔎
 
