@@ -156,8 +156,6 @@ No arquivo disponibilizado pelo professor da disciplina, houveram algumas regras
 
 4. **No final, a heap conterá os k elementos com maiores valores (frequências) da coleção de dados. Então, imprima-os em ordem crescente.**
 
-## Representação gráfica 📷
-
 ## Resolução do problema ✅
 
 Após a conclusão do projeto, temos aqui um algoritmo capaz de:
