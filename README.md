@@ -236,7 +236,7 @@ O resultado obtido está na imagem abaixo.
 
 <div align="center">
 
-![Screenshot from 2023-08-24 23-52-06](https://github.com/phpdias/top-k-elementos/assets/84406892/359edb92-d96f-4479-93be-0e3ba8dea5ab)
+![Screenshot from 2023-08-24 23-52-06(1)](https://github.com/phpdias/top-k-elementos/assets/84406892/b81ff32b-b765-4e68-8242-e2784c2e425b)
 
 </div>
 
