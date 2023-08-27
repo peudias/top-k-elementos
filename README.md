@@ -19,11 +19,11 @@
 
 ............................................................................
 
-6. A documentação apresenta uma discussão sobre o problema?
-7. A documentação apresenta como foi pensado a resolução do problema?
-8. A documentação apresenta pequenos exemplos para explicar o funcionamento?
-9. A documentação apresenta conclusões sobre o trabalho?
-10. A documentação detalha a forma como o código deve ser compilado?
+6. A documentação apresenta uma discussão sobre o problema? ✅
+7. A documentação apresenta como foi pensado a resolução do problema? ✅
+8. A documentação apresenta pequenos exemplos para explicar o funcionamento? ✅
+9. A documentação apresenta conclusões sobre o trabalho? ✅
+10. A documentação detalha a forma como o código deve ser compilado? ✅
 
 ## Documentação
 
