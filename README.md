@@ -76,6 +76,21 @@ Agora, a pergunta é: como podemos implementar essa solução usando C++? Como p
 
 ## Implementação do Problema 💡
 
+Nesse tópico uma breve análise das propriedades e funcionalidades do projeto. Para informações detalhadas e mais aprofundadas, acesse a [**Wiki**](https://github.com/phpdias/top-k-elementos/wiki).
+
+**Processamento de Texto e Manipulação de Arquivos em C++**
+
+O arquivo main do código demonstra um método de como processar texto e manipular arquivos em C++. Por meio de diversas bibliotecas e funcionalidades da linguagem, percorre arquivos de texto em um diretório especificado, lê seus conteúdos, realiza operações de processamento de texto e cria um mapa de frequência das palavras encontradas.
+
+1. **Leitura de Arquivos de Texto:**
+   O código utiliza a biblioteca `<filesystem>` para percorrer arquivos em um diretório específico. Verifica-se cada arquivo é regular, se possui extensão ".txt" e se o nome do arquivo começa com "input". Caso essas condições sejam atendidas, o conteúdo do arquivo é lido e adicionado à variável `concatenatedText`. Isso ilustra um modelo de como pode ser usado para iterar sobre arquivos em um diretório e ler seus conteúdos.
+
+2. **Processamento de Texto:**
+   A string `concatenatedText` acumula o conteúdo de todos os arquivos de texto lidos. Em seguida, essa string é convertida em um fluxo de entrada (`istringstream`) e passada para a função `processText`, juntamente com um mapa de frequência das palavras e um conjunto de palavras irrelevantes ("stopwords").
+
+3. **Uso de Hashing:**
+   Após o processamento das frequências das palavras, o código chama a função `processHash`, que leva o mapa de frequência e um valor `k` como argumentos.
+
 [CPP Reference](https://en.cppreference.com/) [^2]
 
 [CPlusPlus](https://en.cppreference.com/) [^3]
@@ -130,6 +145,8 @@ O código aplicado implementa uma série de funções que lidam com a manipulaç
    A função `processHash` recebe um mapa de frequência de palavras e um valor "k" como parâmetros. Ela itera sobre as entradas do mapa, criando objetos `HeapNode` para cada palavra e sua frequência correspondente. Esses objetos são então inseridos no heap mínimo através da função `insertToMinHeap`. Uma vez que todas as entradas foram processadas e o heap contém os "k" elementos mais frequentes, a função `printMinHeap` é chamada para exibir os resultados.
 
 ## Regras 📜
+
+No arquivo disponibilizado pelo professor da disciplina, houveram algumas regras explícitas para serem seguidas. Disponível a seguir:
 
 1. **Para cada elemento restante na hash, compare a contagem com o menor valor do heap.**
 
@@ -212,9 +229,11 @@ Ao implementar adequadamente esse algoritmo, sua complexidade é estimada em O(n
 
 ## Conclusão 🎯
 
+O projeto apresentado oferece uma visão prática de como C++ pode ser usado para processar e analisar dados textuais por meio de operações de leitura de arquivos, processamento de texto e uso de técnicas de hashing. Ele ilustra a importância das bibliotecas padrão da linguagem e das técnicas de programação eficiente para lidar com tarefas de processamento de dados. Esse código serve como exemplo da versatilidade do C++ e da sua aplicação em cenários que envolvem análise de texto e manipulação de arquivos.
+
 Em conclusão, o `hash.cpp` apresenta um método robusto para processar textos, calcular a frequência de palavras relevantes e desconsiderar stopwords, o que é uma etapa fundamental em várias aplicações de processamento de linguagem natural, como análise de sentimentos, extração de informações e sumarização de texto. A implementação cuidadosa das etapas de pré-processamento e a consideração das stopwords tornam esse código uma ferramenta eficaz para analisar e compreender melhor o conteúdo de um texto.
 
-O projeto em si demonstra a eficácia dos heaps mínimos na identificação dos "k" elementos de maior frequência a partir de um mapa de frequência de palavras. Essa abordagem otimizada permite a manipulação de grandes volumes de dados de maneira eficiente, sendo especialmente útil em cenários nos quais a análise da frequência de palavras é essencial, como processamento de texto, análise de dados linguísticos e muito mais. Ao utilizar as propriedades dos heaps mínimos, o código oferece uma solução escalonável e eficaz para essa tarefa específica.
+Há também a demonstração da eficácia dos heaps mínimos na identificação dos "k" elementos de maior frequência a partir de um mapa de frequência de palavras. Essa abordagem otimizada permite a manipulação de grandes volumes de dados de maneira eficiente, sendo especialmente útil em cenários nos quais a análise da frequência de palavras é essencial, como processamento de texto, análise de dados linguísticos e muito mais. Ao utilizar as propriedades dos heaps mínimos, o código oferece uma solução escalonável e eficaz para essa tarefa específica.
 
 # Compilação e Execução 🔄
 
