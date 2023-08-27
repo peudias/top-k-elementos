@@ -76,13 +76,41 @@ Agora, a pergunta é: como podemos implementar essa solução usando C++? Como p
 
 ## Implementação do Problema 💡
 
-[CPP Reference](https://en.cppreference.com/)  [^2]
+[CPP Reference](https://en.cppreference.com/) [^2]
 
-[CPlusPlus](https://en.cppreference.com/)  [^3]
+[CPlusPlus](https://en.cppreference.com/) [^3]
 
 ### **Contagem de Frequência com Tabela de Dispersão (Hash)**
 
-Uma etapa fundamental na resolução do desafio dos top k itens envolve a criação de uma tabela de dispersão, também conhecida como hash. Essa estrutura nos permite realizar a contagem eficiente da frequência de cada elemento tokenizado presente na coleção de dados de entrada.
+Uma etapa fundamental na resolução do desafio dos top k itens envolve a criação de uma tabela de dispersão, também conhecida como hash table. Essa estrutura nos permite realizar a contagem eficiente da frequência de cada elemento tokenizado presente na coleção de dados de entrada.
+
+Esta é uma abordagem eficiente e escalável no processamento de linguagem natural. Essa técnica aproveita as propriedades da estrutura de dados de hash para armazenar e acessar informações de forma rápida, tornando possível o mapeamento direto entre palavras e suas contagens de frequência. Ao associar cada palavra a um índice calculado por uma função de hash, a tabela de dispersão elimina a necessidade de percorrer todo o conjunto de palavras, agilizando a operação de inserção e recuperação.
+
+Além disso, a utilização de uma tabela de dispersão permite lidar eficazmente com colisões, situações em que duas palavras têm a mesma posição calculada. No contexto da contagem de frequência, a eficiência proporcionada pela tabela de dispersão é essencial, especialmente quando se lida com grandes volumes de texto.
+
+Em comparação com abordagens de busca sequencial, a técnica de Hashing otimiza o tempo de processamento, tornando-a uma escolha sólida para tarefas de análise de texto que exigem uma avaliação precisa e rápida da frequência das palavras.
+
+No arquivo `hash.cpp`, o código é responsável por realizar o processamento de um texto para calcular a frequência das palavras no mesmo, excluindo as palavras que são consideradas stopwords. A seguir, uma breve análise e discussão das propriedades e funcionalidades desse código.
+
+**Processamento de Texto com Exclusão de Stopwords**
+
+O código apresenta uma implementação de processamento de texto que tem como objetivo calcular a frequência das palavras em um determinado texto, excluindo aquelas que são consideradas `stopwords`. Stopwords são palavras comuns em um idioma que geralmente não são relevantes para a análise de texto, pois não carregam um significado distinto.
+
+A função `readStopwords` é responsável por ler um arquivo contendo uma lista de stopwords e armazená-las em um conjunto (unordered_set) chamado `stopwords`. Isso é realizado através da abertura do arquivo especificado pelo parâmetro `filename` e, caso o arquivo seja aberto com sucesso, as stopwords são lidas linha por linha e inseridas no conjunto. Caso contrário, uma mensagem de erro é exibida. Essa função retorna o conjunto de stopwords lidas.
+
+A segunda função, `processText`, recebe como parâmetros um fluxo de entrada (`inputStream`), um mapa não ordenado (unordered_map) chamado `frequencyMap` e o conjunto de stopwords `stopwords`. A função percorre o fluxo de entrada linha por linha, onde cada linha é processada em busca de palavras. Para cada palavra encontrada, várias etapas de pré-processamento são aplicadas:
+
+1. **Transformação para minúsculas:** A palavra é convertida para minúsculas usando a função `transform` da biblioteca `<algorithm>`, garantindo que as palavras em maiúsculas e minúsculas sejam tratadas como iguais.
+
+2. **Remoção de pontuações no início e no final:** Quaisquer pontuações no início ou no final da palavra são removidas utilizando as funções `ispunct` e os métodos `erase` e `pop_back`.
+
+3. **Verificação de stopwords:** A palavra é verificada se está presente no conjunto de stopwords. Se sim, a palavra é ignorada e o processamento passa para a próxima palavra.
+
+4. **Segmentação em palavras:** A palavra é dividida em segmentos utilizando caracteres de espaço e pontuações como delimitadores. Isso é feito usando um loop que encontra os índices de início e fim de cada palavra ou segmento dentro da palavra original.
+
+5. **Atualização do mapa de frequência:** Se o segmento for uma palavra não vazia e não uma stopword, ela é inserida no mapa `frequencyMap` e sua contagem é incrementada.
+
+Dessa forma, essa função percorre o texto palavra por palavra, realizando o processamento necessário para calcular a frequência de palavras relevantes, ignorando stopwords e tratando corretamente as pontuações e caracteres especiais.
 
 ### **Construção da Árvore de Prioridades (Heap)**
 
@@ -170,6 +198,8 @@ A seguir, três seções das quais abordo a resolução do problema, desde a [en
 Ao implementar adequadamente esse algoritmo, sua complexidade é estimada em O(nlogk), em que 'n' denota o tamanho total da coleção de dados e 'k' representa o número de elementos mais relevantes que são considerados. Essa análise reflete a eficiência do algoritmo na gestão de grandes conjuntos de dados ao empregar estruturas de dados como hash e heap, contribuindo para um desempenho otimizado na identificação dos elementos mais significativos.
 
 ## Conclusão 🎯
+
+Em conclusão, o `hash.cpp` apresenta um método robusto para processar textos, calcular a frequência de palavras relevantes e desconsiderar stopwords, o que é uma etapa fundamental em várias aplicações de processamento de linguagem natural, como análise de sentimentos, extração de informações e sumarização de texto. A implementação cuidadosa das etapas de pré-processamento e a consideração das stopwords tornam esse código uma ferramenta eficaz para analisar e compreender melhor o conteúdo de um texto.
 
 # Compilação e Execução 🔄
 
