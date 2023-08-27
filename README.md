@@ -246,7 +246,11 @@ O resultado obtido está na imagem abaixo.
 
 <div align="justify">
 
-O algoritmo apresentado envolve a leitura e concatenação de arquivos de texto, processamento de texto para remoção de pontuação e stopwords, geração de um heap mínimo para armazenar as palavras mais frequentes, e a impressão dos principais elementos desse heap. O custo do algoritmo é influenciado pelo número e tamanho dos arquivos de entrada, sendo a leitura e concatenação dos arquivos linear em relação ao tamanho total, o processamento de texto linear em relação ao tamanho do texto, a geração do heap mínimo O(n \* log k), onde n é o número de palavras únicas, e a impressão do heap proporcional a k, o número de elementos principais no heap. A eficiência real depende da implementação das estruturas de dados e de otimizações específicas do compilador.
+O algoritmo apresentado envolve a leitura e concatenação de arquivos de texto, processamento de texto para remoção de pontuação e stopwords, geração de um heap mínimo para armazenar as palavras mais frequentes, e a impressão dos principais elementos desse heap. 
+
+O custo do algoritmo é influenciado pelo número e tamanho dos arquivos de entrada, sendo a leitura e concatenação dos arquivos linear em relação ao tamanho total, o processamento de texto linear em relação ao tamanho do texto, a geração do heap mínimo O(n \* log k), onde n é o número de palavras únicas, e a impressão do heap proporcional a k, o número de elementos principais no heap. 
+
+A eficiência real depende da implementação das estruturas de dados e de otimizações específicas do compilador.
 
 </div>
 
