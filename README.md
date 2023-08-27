@@ -36,7 +36,7 @@ e o motivo de sua escolha para manter o desempenho da solução. ✅
 • Para os arquivos utilizados para teste, uma descrição da saída esperada. ✅
 
 • Uma parte do README.md contendo todas as instruções necessárias para a execução
-de seu trabalho para arquivos de entrada diferentes dos adotados durante os testes.
+de seu trabalho para arquivos de entrada diferentes dos adotados durante os testes. ✅
 
 • Um git contendo todo o projeto, bem como, toda descrição pertinente sobre sua execução,
 projeto e implementação. Neste documento (README.mb), espera-se observar uma
@@ -279,6 +279,8 @@ Há também a demonstração da eficácia dos heaps mínimos na identificação 
 <div align="justify">
 
 Este algoritmo possui um arquivo Makefile e um arquivo CMakeLists que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
+
+Para arquivos de entrada diferentes dos adotados durante os testes, seguir as instruções presentes na [Instruções de Execução](https://github.com/phpdias/top-k-elementos/wiki/4.-Instru%C3%A7%C3%B5es-de-Execu%C3%A7%C3%A3o) e fazer as modificações necessárias.
 
 </div>
 
