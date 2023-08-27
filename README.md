@@ -154,11 +154,21 @@ Referências para as funções utilizadas:
 
 </div>
 
-## Detalhamento sobre as fases de especificação, projeto e implementação. 
+## Detalhamento sobre as fases de especificação, projeto e implementação. 🧑‍🏫
 
-Nessa etapa, está inclusa uma ampla discussão sobre as estruturas utilizadas e o motivo da escolha para manter o desempenho da solução.
+<div align="justify">
 
-Para este projeto, houve um cuidadoso emprego de estruturas para eficiência. A escolha de um heap mínimo (minHeap) para identificar as palavras mais frequentes, em conjunto com o uso de unordered_map para o mapeamento das palavras e suas frequências, reflete uma abordagem sensata para otimizar a recuperação das palavras com maiores contagens. Isso reduz a complexidade de tempo e possibilita a identificação dos K elementos mais relevantes. A estratégia de filtrar stopwords, otimizando o cálculo de frequência, também atesta a consideração pelo desempenho. Em resumo, a fase de especificação moldou a solução em detalhes, o projeto traduziu esses detalhes em estruturas eficientes e a implementação executou a visão concebida, culminando em um sistema coeso e de alto desempenho para análise de frequência de palavras.
+Nessa etapa, está inclusa uma ampla discussão sobre as estruturas utilizadas e o motivo da escolha para manter o desempenho da solução. Há também um paralelo com outras estruturas para demonstrar de fato que as estruturas adotadas são as melhores possíveis para o problema em questão.
+
+Para este projeto, houve um cuidadoso emprego de estruturas para eficiência. A escolha de um heap mínimo (minHeap) para identificar as palavras mais frequentes, em conjunto com o uso de unordered_map para o mapeamento das palavras e suas frequências, reflete uma abordagem sensata para otimizar a recuperação das palavras com maiores contagens. Isso reduz a complexidade de tempo e possibilita a identificação dos K elementos mais relevantes. A estratégia de filtrar stopwords, otimizando o cálculo de frequência, também atesta a consideração pelo desempenho. 
+
+Em resumo, a fase de especificação moldou a solução em detalhes, o projeto traduziu esses detalhes em estruturas eficientes e a implementação executou a visão concebida, culminando em um sistema coeso e de alto desempenho para análise de frequência de palavras.
+
+A escolha das estruturas de dados no projeto apresentado demonstra um entendimento cuidadoso das necessidades do problema e da eficiência na manipulação e processamento de texto. A utilização de um heap mínimo (min heap) é especialmente apropriada para identificar as palavras mais frequentes. Isso se deve ao fato de que, para encontrar as K palavras mais frequentes, não é necessário classificar todo o conjunto de palavras, como seria o caso com um heap máximo ou outras estruturas de dados, como listas ou árvores de busca. O min heap permite manter apenas os K elementos mais frequentes em ordem crescente, substituindo aqueles com menor frequência à medida que novas palavras são processadas. Isso resulta em uma complexidade de tempo eficiente, melhor do que outras abordagens que requerem ordenação completa dos dados.
+
+Comparativamente, outras estruturas como listas ou árvores de busca (como AVL ou árvores rubro-negras) teriam uma complexidade de inserção, remoção e busca potencialmente mais elevada, impactando negativamente o desempenho ao trabalhar com grandes volumes de dados. Além disso, a escolha de usar unordered_map para armazenar as palavras e suas frequências permite acesso direto e rápido à frequência de uma palavra específica, evitando a necessidade de iteração linear. A eliminação de stopwords durante o processamento inicial reduz a carga de trabalho desnecessária, melhorando ainda mais a eficiência da solução. Portanto, a combinação de um min heap e unordered_map demonstra uma decisão sólida e otimizada para abordar o problema de identificação das palavras mais frequentes em um texto.
+
+</div>
 
 ## Regras 📜
 
